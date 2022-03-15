@@ -1,0 +1,120 @@
+﻿ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>BACKGROUND</title>
+</head>
+<body>
+  <div class="topnav">
+  <a href="index.html"><b>HOME</b></a>
+  <a class="active" href="background.html"><b>BACKGROUND</b></a>
+  <a href="golfjourney.html"><b>GOLF JOURNEY</b></a>
+  <a href="inspirations.html"><b>INSPIRATIONS</b></a>
+</div>
+
+  <div class="a">
+  <h2>Background on Golf</h2>
+  <p> Golf is a game in which a player using special clubs attempts to sink a small ball with as few strokes as possible into each of the 9 or 18 successive holes on an outdoor course. Each hole has associated with it a par, or score standard, usually from par 3 to par 5. </p>
+  <p> The origins of the game are difficult to ascertain, although evidence now suggests that early forms of golf were played in the Netherlands first and then in Scotland. Golf developed in Scotland—the courses were originally fields of grass that sheep had clipped short in their characteristic grazing style. </p>
+  <p> Golf balls were originally made of wood; wood was replaced in the 17th century by boiled feathers stuffed in a leather cover, in the 19th century by gutta-percha, and in the 20th century by hard rubber. Clubs, limited in number to 14, are known by the traditional names of “irons” (primarily for mid-range to short shots) and “woods” (primarily for longer shots); today irons are more likely made of stainless steel, and woods are actually made of metal such as steel or titanium. </p>
+  
+  <h2> Personal Note </h2>
+  <p> I was introduced to this beautiful game by my Dad, and this website is dedicated to him. </p>
+  </div> 
+
+<div class="container">
+
+<div class="mySlides">
+    <img src="family.jpg" class="image1" style= width="600" height="300">
+  </div>
+    
+  <div class="mySlides">
+    <img src="family1.jpg" class="image1" style= width="600" height="300">
+  </div>
+
+ <div class="mySlides">
+    <img src="golfclubs.jpg" class="image1" style= width="600" height="300">
+  </div>
+
+  <div class="mySlides">
+    <img src="golfball.jpg" class="image1" style= width="600" height="300">
+  </div>
+
+  <div class="mySlides">
+    <img src="pebblebeach.jpg" class="image1" style= width="600" height="300">
+  </div>
+    
+  <div class="mySlides">
+    <img src="sentosagolfclub.jpg" class="image1" style= width="600" height="300">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="family.jpg" style="width:100%" height="150" onclick="currentSlide(1)" alt="<i>Golf with my brother and dad at Bintan Island, Indonesia</i>">
+    </div>    
+  <div class="column">
+      <img class="demo cursor" src="family1.jpg" style="width:100%" height="150" onclick="currentSlide(2)" alt="<i>Golf with my brother and dad at Marina Bay Golf Course, Singapore</i>">
+    </div>    
+ <div class="column">
+      <img class="demo cursor" src="golfclubs.jpg" style="width:100%" height="150" onclick="currentSlide(3)" alt="<i>Golf Clubs. From Left: Putter, Wedges, Irons, Hybrids and Woods</i>">
+    </div>
+ <div class="column">
+      <img class="demo cursor" src="golfball.jpg" style="width:100%" height="150" onclick="currentSlide(4)" alt="<i>Golf Ball on a Driving Tee</i>">
+    </div>
+ <div class="column">
+      <img class="demo cursor" src="pebblebeach.jpg" style="width:100%" height="150" onclick="currentSlide(5)" alt="<i>Pebble Beach Golf Links, one of the most beautiful golf courses in the world</i>">
+    </div>
+ <div class="column">
+      <img class="demo cursor" src="sentosagolfclub.jpg" style="width:100%" height="150" onclick="currentSlide(6)" alt="<i>Sentosa Golf Club, which hosts international professional golf tournaments in Singapore</i>">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<br>
+
+<footer>
+  <p> Created in the <i>AED23M: Computer Literacy through Coding and Applications Course</i> by Hans Tan in Mar 2022 </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+
+.bg {
+  background-image: url("homepicture.jpg");
+  height: 100%; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+
+.text-block0 {
+  position: absolute;
+  bottom: 425px;
+  right: 550px;
+  background-color: transparent;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 525px;
+  right: 640px;
+  background-color: transparent;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block1 {
+  position: absolute;
+  bottom: 75px;
+  right: 1050px;
+  background-color: transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.text-block2 {
+  position: absolute;
+  bottom: 75px;
+  right: 630px;
+  background-color: transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.text-block3 {
+  position: absolute;
+  bottom: 75px;
+  right: 240px;
+  background-color: transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #A0A0A0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-decoration: none;
+  
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 18px 120.4px;
+  text-decoration: none;
+  font-size: 22px;
+
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: black;
+  text-decoration: none;
+}
+
+
+div.a {
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-top: 90px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+
+
+*******
+
+div.d {
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 125px;
+}
+
+div.b {
+  text-align: justify;
+  margin: 50px;
+}
+
+div.gallery {
+  border: 0px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 0px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+figure {
+  width: 100%;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.responsive {
+  padding: 0 5px;
+  float: left;
+  width: 33.33%;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+a, a:hover, a:focus, a:active { 
+text-decoration: underline; 
+color: inherit; 
+}
+
+*******
+
+.mySlides {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image2 {
+  display: block;
+}
+
+.container {
+  position: relative;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -70px;
+  margin-left: 450px;
+  margin-right: 450px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev1,
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: grey;
+}
+
+.prev1:hover,
+.next1:hover {
+  background-color: grey;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+}
+
+/
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+*******

@@ -1,0 +1,110 @@
+﻿ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>BEGINNINGS</title>
+</head>
+<body>
+  <div class="topnav">
+  <a href="index.html"><b>HOME</b></a>
+  <a href="background.html"><b>BACKGROUND</b></a>
+  <a class="active" href="golfjourney.html"><b>GOLF JOURNEY</b></a>
+  <a href="inspirations.html"><b>INSPIRATIONS</b></a>
+</div>
+
+  <div class="a">
+  <h2>Beginnings</h2>
+  <p> <u> Introduction to the Game </u> </p>
+  <p> I was introduced to the game of golf by my dad. He taught me everything about the game, ranging from the rules to the techniques involved. </p>
+  <p> Every beginner would start off at the driving range, and that was what we did. We frequented the nearby <b>Champions Golf Driving Range</b>, and that was where he taught me the basics of the game. </p>
+  <hr>
+  <p> <u> My 1st Round of Golf </u> </p>
+  <p> After numerous rounds of practices at the driving range, I played my 1st round of golf at <b>Royal Tanglin Golf Course</b>. It was suited for beginners because it was purely a Par 3 course (i.e. a short course). </p>
+  <hr>
+  <p> <u> Subsequent Rounds of Golf </u> </p>
+  <p> As I slowly improved my playing abilities, my 2nd round of golf was played at <b>Mandai Executive Golf Course</b>, which was also suited for beginners because it was a relatively short course too. </p>
+  <p> Due to the high cost of playing in golf courses in Singapore, as a family, we travelled overseas to play. My 1st overseas golf game was played in <b>Bintan Island, Indonesia </b>. Unlike the previous beginner courses I played in Singapore, the golf course at Bintan Island was better maintained; which enabled me to play a better game. Also, as the golf course was near the sea, the view I had while playing was truly breathtaking, and it is one I remember up till this day. </p>
+  <hr>
+
+<div class="container">
+
+<div class="mySlides">
+<figure>
+    <img src="drivingrange.jpg" class="image1" style= width="600" height="300">
+    <br>
+    <figcaption><center><i> Driving Range @ Champions Golf Driving Range </i></center> </figcaption>
+</figure>
+  </div>
+  
+  <div class="mySlides">  
+<figure>
+    <img src="tanglingolfcourse.jpg" class="image1" style= width="600" height="300">
+    <br>
+   <figcaption><center><i> My 1st game of golf was played at Royal Tanglin Golf Course, entirely a Par 3 course, suited for beginners </i></center> </figcaption>
+</figure>
+  </div>
+
+  <div class="mySlides">
+<figure>
+    <img src="mandaigolfcourse.jpg" class="image1" style= width="600" height="300">
+    <br>
+   <figcaption><center><i> My 2nd game of golf was played at Mandai Executive Golf Course, also suited for beginners </i></center> </figcaption>
+</figure>
+  </div>
+
+  <div class="mySlides">
+<figure>
+    <img src="overseasgolfcourse.jpg" class="image1" style= width="600" height="300">
+    <br>
+   <figcaption><center><i> As I improved my game, we went overseas as a family to play. This was played in Bintan Island, Indonesia </i></center> </figcaption>
+</figure>  
+</div>
+
+  <a class="prev1" onclick="plusSlides(-1)">❮</a>
+  <a class="next1" onclick="plusSlides(1)">❯</a>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<br>
+<p><a href="golfjourney.html">Back to Golf Journey</a></p>
+
+
+</div>
+</div>
+<footer>
+  <p> Created in the <i>AED23M: Computer Literacy through Coding and Applications Course</i> by Hans Tan in Mar 2022 </p>
+</footer>
+
+</body>
+</html>
